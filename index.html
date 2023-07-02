@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/acedfe95e6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- First label-->
+    <div class="header">
+        <label >Invoice Date:</label>
+        <input type="date" class="box">
+        <label class="label1">Sale Type:</label>
+        <!-- Cash type-->
+        <select id="cashtype">
+            <option value="cashsale">Cash sale</option>
+            <option value="offline sale">Offline sale</option>
+        </select>
+        <!-- Second label-->
+        <label class="name"> Cashier Name: Shivam gupta</label>
+
+        <br />
+        <br>
+        <!-- third  label-->
+        <label>Invoice  No:</label>
+        <input type="text" class="box2" placeholder="Automatic">
+        <label class="names">Cash Sale(Payment By:Credit Card,Debit Card,Upi Sale)</label>
+        <hr>
+        <fieldset>
+            <legend>Barcode</legend>
+            <input type="text" style="background-color: yellow;">
+            <label class="name2"> Code </label>
+            <input type="text" style="margin-left: 20px;">
+        </fieldset>
+        <!-- calculate-->
+        <div class="oneline">
+        <span >Quantity</span>
+        <input type="text" placeholder=".000" style="width: 5%;"> 
+        <span class="border">MRP</span>
+        <input type="text" placeholder=".00">
+        <span class="border">Rate</span>
+        <input type="text" placeholder=".00" style="width:80px" >
+        <span >Discount</span>
+        <input type="text">
+        <span >Gst(%)</span>
+        <input type="text" style="width:80px">
+        <span >Net Rate</span>
+        <input type="text" placeholder=".000" style="width:80px">
+        <span >Value</span>
+        <input type="text" placeholder=".000"style="width:80px">
+        </div> 
+        <!-- Main content-->
+        <div class="content">
+            <p>Sr
+                <b>Item description</b>
+            </p>
+            <p class="blue"></p>
+            <div class="leftline"></div>
+            <p class="buttons"> F1:Itemhelp 
+                F8/Alt+F8:ItemName+RateHelp
+                F3:Repeat Time
+                F9:Change Qty&rate 
+
+            </p>
+            <div id=upperq>
+                <li>Lucky Draw Amount</li>
+                <li>Total Quantity</li>
+                <li>Total Discount</li>
+                <li>Buy-back Amount</li>
+                <li  class="right" style="float: right;">(Total price)</li>
+            </div>
+            <br>
+            <span id="price">0.00</span>
+            <span id="price">0.00</span>
+            <span id="price">0.00</span>
+            <span id="price">0.00</span>
+            <span class="mainprice">0.00</span>
+            <br>
+            <button class="icons">
+                <i class="far fa-save fa-3x" ></i>
+                <span>Save</span>
+                </button>
+                <button class="icons2">
+                <i class="fas fa-window-close fa-3x"></i>
+                <span>Cancel</span>
+            </button>
+            <br>
+            <footer>
+                Created By:  Sanjeev System India Pvt Ltd. 
+            </footer>
+            
+            
+        </div>
+    </div>
+    
+</body>
+</html>
